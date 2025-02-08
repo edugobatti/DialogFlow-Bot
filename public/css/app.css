@@ -1,0 +1,203 @@
+::placeholder {
+  color: rgb(255, 255, 255, 1);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.context {
+  width: 100%;
+  position: absolute;
+  top:50vh;
+  
+}
+.context h1{
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+.area{
+  position: absolute;
+  background: #4e54c8;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100vh;
+}
+.circuloQuadrado{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circuloQuadrado li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: animacaoMarota 25s linear infinite;
+  bottom: -150px;
+}
+.circuloQuadrado li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circuloQuadrado li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circuloQuadrado li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.circuloQuadrado li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circuloQuadrado li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.circuloQuadrado li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circuloQuadrado li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.circuloQuadrado li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.circuloQuadrado li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.circuloQuadrado li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animacaoMarota {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.chatBody {
+  height: 500px;
+  overflow: auto;
+  margin-top: 2%;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.3px);
+  -webkit-backdrop-filter: blur(17.3px);
+}
+
+.rigthBuble {
+  background-color: rgb(80, 8, 8);
+  border-radius: 8px;
+  background-size: auto;
+  text-align: right;
+  float: right;
+}
+
+.leftBuble {
+  background-color: blueviolet;
+  border-radius: 8px;
+  background-size: auto;
+  text-align: left;
+  float: left;
+}
+
+.spanDialog {
+  margin: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chatInput {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.inputMSG {
+  width: 100%;
+  border: none!important;
+  outline: none!important;
+  box-shadow: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  backdrop-filter: blur(17.3px);
+  -webkit-backdrop-filter: blur(17.3px);
+}
+
+.inputMSG:focus {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(17.3px);
+  box-shadow: none;
+  border: none!important;
+  outline: none!important;
+  color: #fff;
+}
+
+.btnSend {
+  border-radius: 0px 50px 50px 0px;
+  height: 37.5px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(17.3px);
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.btnSend:focus {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(17.3px);
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.line {
+  width: 100%;
+  display: inline-block;
+}
