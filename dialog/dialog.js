@@ -9,13 +9,13 @@ const uuid = require('uuid');
 
 async function runSample(textoUser) {
 
-    const projectId = 'letstalk-9c058'
+    const projectId = 'ID do seu projeto'
     // A unique identifier for the given session
     const sessionId = uuid.v4();
 
     // Create a new session
     const sessionClient = new dialogflow.SessionsClient({
-        'keyFilename': './dialog/letstalk-9c058-d5e6bdd67910.json'
+        'keyFilename': './dialog/colocar chave aqui'
     });
 
     const sessionPath = sessionClient.sessionPath(projectId, sessionId);
