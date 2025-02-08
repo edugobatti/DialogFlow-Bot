@@ -20,8 +20,8 @@ Antes de iniciar, certifique-se de ter:
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/edugobatti/DialogFlow-Bot
+   cd DialogFlow-Bot
    ```
 
 2. Instale as dependências:
